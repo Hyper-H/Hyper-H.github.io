@@ -1,378 +1,342 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2026/02/28/hello-world/index.html">
-<meta property="og:site_name" content="何皓鹏">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-02-27T16:25:00.261Z">
-<meta property="article:modified_time" content="2026-02-27T16:17:27.348Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/2026/02/28/hello-world/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>Hello World | 何皓鹏</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="何皓鹏" type="application/atom+xml">
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">何皓鹏</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">行有不得，反求诸己</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-project">
-
-    <a href="/project/" rel="section"><i class="fa fa-code fa-fw"></i>我的项目</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="何皓鹏">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Hello World
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2026-02-28 00:25:00 / 修改时间：00:17:27" itemprop="dateCreated datePublished" datetime="2026-02-28T00:25:00+08:00">2026-02-28</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
+    <title></title>
     
     
-    
-    <div class="post-body" itemprop="articleBody">
 
+    <!-- import meta -->
+    
+    <!-- import link -->
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+    
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5/dist/jquery.fancybox.min.css">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    
+    <!-- style.css -->
+    
+      
+<link rel="stylesheet" href="/css/page.css">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+    
+  <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="何皓鹏" type="application/atom+xml">
+</head>
+  <body class="docs">
+    <div id="mobile-bar">
+      <a class="menu-button fas fa-bars"></a>
+      <h2 class="nav-title"></h2>
+      
     </div>
-
     
-    
-    
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
 
-      <footer class="post-footer">
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "resume"
+    </script>
 
+    <div id="main" class="fix-sidebar">
+      <div class="sidebar">
+  <div class="sidebar-inner">
+    <header class='header'>
+      <h2></h2>
+      
+      <div class='meta'>
         
-
-
+      </div>
+    <hr><br>
+    </header>
+    <div class="list">
+      <ul class="menu-root">
         
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
+          <li>
+            <a href="/zh-cn/index.html" class="sidebar-link current"></a>
+          </li>
+        
+          <li>
+            <a href="/project/index.html" class="sidebar-link">project</a>
+          </li>
+        
+          <li>
+            <a href="/resume/index.html" class="sidebar-link current"></a>
+          </li>
+        
+          <li>
+            <a href="/tags/index.html" class="sidebar-link">tags</a>
+          </li>
+        
       </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives">
-          <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2026</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+    
+  </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+
+<div class="content with-sidebar">
+  <div class='resume-header'>
+    
+    <h1 class='resume-title'></h1>
+    <p class='description'></p>
+    
   </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
+  <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>小明的个人简历</title>
+    <meta name="theme-color" content="#ffc91d"/>
+    <link rel="icon" href="/Resume/static/img/32.png" sizes="32x32"/>
+    <link rel="icon" href="/Resume/static/img/192.png" sizes="192x192"/>
+    <link href="/css/kico.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/paul.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1"/>
+</head>
+<body>
+<aside class="sidebar">
+    <div class="avatar">
+        <img src="/img/avatar.jpg" title="保罗酱"/>
+    </div>
+    <nav class="nav">
+        <a href="#info">资料</a>
+        <a href="#skills">技能</a>
+        <a href="#works">作品</a>
+        <a href="#story">经历</a>
+        <a href="#team">团队</a>
+    </nav>
+</aside>
+<main>
+    <section id="info">
+        <div class="wrap">
+            <h2 class="title">个人资料</h2>
+            <div class="row">
+                <div class="col-l-4">
+                    <p>姓名：小明</p>
+                    <p>性别：男</p>
+                    <p>年龄：17</p>
+                    <p>英文名：Paul</p>
+                    <p>学历：大专（高技）</p>
+                </div>
+                <div class="col-l-4">
+                    <p>QQ：1204958596</p>
+                    <p>GitHub：<a target="_blank" rel="noopener" href="https://github.com/Dreamer-Paul">Dreamer-Paul</a></p>
+                    <p>博客：<a target="_blank" rel="noopener" href="https://paugram.com">https://paugram.com</a></p>
+                    <p>邮箱：<a href="mailto:dreamer_paul@126.com">dreamer_paul@126.com</a></p>
+                </div>
+                <div class="col-l-4">
+                    <p>我是一个热爱钻研计算机技术的青少年，从小开始对计算机有极大的兴趣。目前我专注网站开发领域。我还自己发起建立了一个制作游戏的团队，希望能和大家合作，一同创造出属于我们自己的原创作品。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrap">
+            <h2 class="title">掌握的技能</h2>
+            <div class="row scrollable">
+                <div class="col-s-6 col-m-4 center-fixed">
+                    <div class="skills-icon">
+                        <i class="fa fa-html5"></i>
+                    </div>
+                    <div class="skills-title">
+                        <h3>HTML 5</h3>
+                        <p>熟悉 HTML5 网站的架构和开发</p>
+                    </div>
+                </div>
+                <div class="col-s-6 col-m-4 center-fixed">
+                    <div class="skills-icon">
+                        <i class="fa fa-css3"></i>
+                    </div>
+                    <div class="skills-title">
+                        <h3>CSS3</h3>
+                        <p>熟悉使用 CSS3 写响应式网站、动画等</p>
+                    </div>
+                </div>
+                <div class="col-s-6 col-m-4 center-fixed">
+                    <div class="skills-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="skills-title">
+                        <h3>JavaScript</h3>
+                        <p>能使用 JS 制作简单的程序、交互与特效</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="works">
+        <div class="wrap">
+            <h2 class="title">个人作品</h2>
+            <div class="row">
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/binkic-2017.jpg"/>
+                        <p>缤奇团队 2017 官网</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/space.jpg"/>
+                        <p>个人博客</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/dream.jpg"/>
+                        <p>梦想主题班会</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/kico-style.jpg"/>
+                        <p>Kico Style 响应式框架</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/robots.jpg"/>
+                        <p>小缤机器人</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/single.jpg"/>
+                        <p>Single 博客主题</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/kico-player.jpg"/>
+                        <p>Kico Player 播放器</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/sweet.jpg"/>
+                        <p>个人主页 Sweet</p>
+                    </div>
+                </div>
+                <div class="col-s-6">
+                    <div class="works-item">
+                        <img src="/img/works/binkic-2018.jpg"/>
+                        <p>缤奇团队 2018 官网</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="story">
+        <div class="wrap">
+            <h2 class="title">个人经历</h2>
+            <div class="row">
+                <div class="col-m-8">
+                    <ul class="timeline">
+                        <li>2015.07.03：创立缤奇（Binkic）团队</li>
+                        <li>2015.12.20：仿照某动漫官网编写模板，并搭建运营了一个动漫型社区</li>
+                        <li>2016.05.30：带领团队进行招新，并发起了首个游戏项目：<a>色块冲刺</a></li>
+                        <li>2016.08.17：为团队制作了首部宣传片：<a href="https://www.bilibili.com/video/av14078749" target="_blank">创意可以改变什么</a></li>
+                        <li>2016.12.08：个人编写的前端响应式框架 <a href="https://kico.binkic.com/style" target="_blank">Kico Style</a> 初现雏形</li>
+                        <li>2017.03.01：基于 Kico Style 的第一个原创 <a href="https://www.binkic.com" target="_blank">缤奇团队官网</a> 正式上线</li>
+                        <li>2017.04.27：使用前端技术编写的 <a href="https://github.com/Dreamer-Paul/Meeting" target="_blank">梦想晨会</a> 制作完成</li>
+                        <li>2017.06.07：参加“众创杯”创业大赛校园选拔赛，团队项目荣获三等奖</li>
+                        <li>2017.06.17：动漫门户网站制作完成，内含一个自己设计的简单音乐播放器</li>
+                        <li>2017.06.25：参加全国中职信息技术技能大赛微网站项目，荣获一等奖</li>
+                        <li>2017.08.03：原创博客主题 <a href="https://github.com/Dreamer-Paul/Single" target="_blank">Single</a> 发布，截至 2 月共有 66 Stars</li>
+                        <li>2017.09.19：个人编写的播放器 <a href="https://kico.binkic.com/player" target="_blank">Kico Player</a> 发布测试版</li>
+                        <li>2017.12.12：基于 ES6 的时钟小工具 <a href="https://kico.binkic.com/tools" target="_blank">Kico Tools</a> 发布测试版</li>
+                        <li>2017.12.18：第一个基于 PHP 的个人首页 <a href="https://paul.gq" target="_blank">Sweet</a> 发布正式版</li>
+                        <li>2018.01.01：缤奇团队新<a href="https://www.binkic.com" target="_blank">官网</a>正式上线，后端采用 Typecho 驱动</li>
+                        <li>2018.02.16：结合前后端制作了一个春节的<a href="https://paugram.com/coding/css-red-packet.html" target="_blank">问答红包</a>，使用正则判断答案</li>
+                    </ul>
+                </div>
+                <div class="col-m-4 center-fixed">
+                    <img src="/img/story.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-d" id="team">
+        <div class="wrap">
+            <h2 class="title">我的团队</h2>
+            <div class="row">
+                <div class="col-m-6">
+                    <p>我的团队 - 缤奇团队由一群热爱科技创新的年轻人所组成，做到了“实际”与“创新”的结合。奇思妙想不乏真正落实。集思广益，生动有趣的创意，尽在缤奇。缤奇团队如今有超过30名成员，各个部门互帮互助，同为一个目标而努力进取着。</p>
+                    <p>缤奇团队致力于开发原创游戏、动漫等项目。目前我们已完成项目有手机游戏“色块冲刺”、聊天娱乐项目“小缤机器人”等。正在创作项目有解密游戏“月亮湖的秘密”、VR 项目“梦想码头”等。缤奇官网 &amp; 社区已陆续开放。网站采用团队成员自主编写的 CSS3 自适应框架，针对移动设备有布局优化，缤奇团队有着丰富的网站建设技术能力、有独立的画师以及文编。</p>
+                    <p>团队官网：<a target="_blank" rel="noopener" href="https://www.binkic.com">https://www.binkic.com</a></p>
+                </div>
+                <div class="col-m-6 center">
+                    <img src="/img/team.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2018 By <a href="https://paugram.com" title="保罗的博客" target="_blank">Dreamer-Paul</a>.</p>
     </footer>
-  </div>
+</main>
 
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
+<script src="/js/kico.js"></script>
+<script src="/js/paul.js"></script>
 
 </body>
+</html>
+  
+</div>
+
+    </div>
+    
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/smooth-scroll.min.js"></script>
+
+    
+
+    
+      <footer id="footer">
+        <p><p><a href="/">Copyright © 2017-2020 XXX</a></p>
+</p>
+      </footer>
+    
+
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+
+    
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/common.js"></script>
+
+    
+    
+      
+<script src="https://cdn.jsdelivr.net/gh/xaoxuu/hexo-theme-resume@1.0.0/source/js/css.escape.js"></script>
+
+    
+
+    
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5/dist/jquery.fancybox.min.js"></script>
+      <script>
+        let LAZY_LOAD_IMAGE = "";
+        $("body").find("fancybox").find("img").each(function () {
+            var element = document.createElement("a");
+            $(element).attr("data-fancybox", "gallery");
+            $(element).attr("href", $(this).attr("src"));
+             if (LAZY_LOAD_IMAGE) {
+               $(element).attr("href", $(this).attr("data-original"));
+             }
+            $(this).wrap(element);
+        });
+      </script>
+    
+
+  </body>
 </html>
